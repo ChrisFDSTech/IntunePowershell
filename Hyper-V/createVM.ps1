@@ -84,7 +84,7 @@ log "Temporarily setting VM name to $VMName"
 log "Copying the $version disk from $templates..."
 try
 {
-    Copy-Item -Path "$($tempaltes)\GM-$($version).vhdx" -Destination "$($virtualHardDisks)\$($VMName).vhdx" -Force | Out-Null
+    Copy-Item -Path "$($templates)\GM-$($version).vhdx" -Destination "$($virtualHardDisks)\$($VMName).vhdx" -Force | Out-Null
     log "Disk coppied to $virtualHardDisks"
 }
 catch
