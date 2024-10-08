@@ -123,7 +123,7 @@ log "New VM Name will be $newName"
 
 try 
 {
-    Renamve-VM -Name $VMName -NewName $newVMName
+    Rename-VM -Name $VMName -NewName $newVMName
     log "VM renamed to $newVMName"    
 }
 catch 
